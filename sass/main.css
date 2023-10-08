@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 COLORS
 
@@ -94,6 +95,7 @@ body {
 }
 
 .detail {
+  font-size: 1.4rem;
   display: flex;
   background-color: var(--color-grey-light-1);
   padding: 4.5rem;
@@ -101,7 +103,6 @@ body {
 }
 
 .description {
-  font-size: 1.4rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
   background-color: #fff;
@@ -110,7 +111,6 @@ body {
 }
 
 .user-reviews {
-  background-color: yellow;
   flex: 1;
 }
 
@@ -402,4 +402,56 @@ body {
 }
 .recommend__photo:not(:last-child) {
   margin-right: -1.5rem;
+}
+
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.review__text {
+  margin-bottom: 2rem;
+  z-index: 10;
+  position: relative;
+}
+.review__user {
+  display: flex;
+  align-items: center;
+}
+.review__user-box {
+  margin-right: auto;
+}
+.review__user-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.review__user-date {
+  font-size: 1rem;
+  color: var(--color-grey-dark-3);
+}
+.review__photo {
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  margin-right: 1.5rem;
+}
+.review__rating {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  font-weight: 300;
+}
+.review::before {
+  content: "“";
+  color: var(--color-grey-light-2);
+  position: absolute;
+  top: -2.75rem;
+  left: -1rem;
+  font-size: 20rem;
+  line-height: 1;
+  font-family: sans-serif;
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

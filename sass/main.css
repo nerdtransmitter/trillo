@@ -490,6 +490,7 @@ body {
             mask-image: url(../img/chevron-thin-right.svg);
     -webkit-mask-size: cover;
             mask-size: cover;
+    background-image: none;
   }
 }
 
